@@ -3,29 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
+    <script src="https://kit.fontawesome.com/9743cd698f.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
 
     <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+
   </head>
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid">
+      <div class="row  mt-5">
+        <h1>Random Card Generator</h1>
+      </div>
+      <div class="whiteCard container-md w-25 h-75 bg-light mt-5 rounded">
+        <div class="topRow row">
+          <div class="col-2">
+            <h1>♦</h1>
+          </div>
+          <div class="col-2">
+            <h1>2</h1>
+          </div>
+          <div class="col-8"></div>
+        </div>
+        <div class="middleRow row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <h1> INSERT IMAGE HERE</h1>
+          </div>
+          <div class="col-3"></div>
+        </div>
+        <div class="bottomRow row">
+          <div class="col-8"></div>
+          <div class="col-2">
+            <h1>2</h1>
+          </div>
+          <div class="col-2">
+            <h1>♦</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 w-25 m-auto">
+        <button type="button" class=" refreshButton btn btn-danger">New Card!</button>
+      </div>
+      <div class="row fixed-bottom p-4 justify-content-center">
+        Made with ❤️ by JBeanCode
       </div>
     </div>
 

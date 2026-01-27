@@ -1,5 +1,8 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: rgb(1, 125, 63);
 }
+
+/* transform: rotate(180deg) */
+/* use the above to rotate the bottom card number and suit image upside down */

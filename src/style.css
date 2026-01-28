@@ -4,5 +4,9 @@ body{
     background: rgb(1, 125, 63);
 }
 
-/* transform: rotate(180deg) */
-/* use the above to rotate the bottom card number and suit image upside down */
+.bottomNum{
+    transform: rotate(180deg)
+}
+.bottomSuit{
+    transform: rotate(180deg)
+}

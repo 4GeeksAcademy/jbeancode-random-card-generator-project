@@ -13,33 +13,35 @@
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
     <div class="container-fluid">
-      <div class="row  mt-5">
+      <div class="row mt-5 w-25 m-auto">
         <h1>Random Card Generator</h1>
+        <!-- need to center the title - not working with MA or JCC -->
       </div>
-      <div class="whiteCard container-md w-25 h-75 bg-light mt-5 rounded">
+      <div class="whiteCard container-md w-25 h-50 bg-white mt-5 rounded">
         <div class="topRow row">
           <div class="col-2">
-            <h1>♦</h1>
+            <h1 class="suit">♦</h1>
           </div>
           <div class="col-2">
-            <h1>2</h1>
+            <h1 class="cardNum">2</h1>
           </div>
           <div class="col-8"></div>
         </div>
         <div class="middleRow row">
-          <div class="col-3"></div>
-          <div class="col-6">
-            <h1> INSERT IMAGE HERE</h1>
+          <!-- <div class="col-3"></div> -->
+          <div class="col-12 m-auto">
+            <!-- how do I center within the div col-6?? (m-auto and JCC dont work) -->
+            <img src ="../assets/BigLebowCard.jpg">
           </div>
-          <div class="col-3"></div>
+          <!-- <div class="col-3"></div> -->
         </div>
         <div class="bottomRow row">
           <div class="col-8"></div>
-          <div class="col-2">
-            <h1>2</h1>
+          <div class="bottomNum col-2">
+            <h1 class="cardNum">2</h1>
           </div>
-          <div class="col-2">
-            <h1>♦</h1>
+          <div class=" bottomSuit col-2">
+            <h1 class = "suit">♦</h1>
           </div>
         </div>
       </div>

@@ -3,10 +3,33 @@
 body{
     background: rgb(1, 125, 63);
 }
-
+.whiteCard{
+    border-radius: 40px;
+    height: 60dvh;
+    width: 40dvh;
+    background-image: url("../assets/BigLebowCard.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
 .bottomNum{
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+    font-size: 200px;
 }
 .bottomSuit{
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+}  
+.suit{
+    font-size: clamp(1rem, 2.5vw, 6rem)
 }
+.cardNum{
+    font-size: clamp(1rem, 2.5vw, 6rem);
+    font-family: "Monaco", "Courier New", monospace;
+}
+.image{
+    transform: scale(0.5);
+}
+
+

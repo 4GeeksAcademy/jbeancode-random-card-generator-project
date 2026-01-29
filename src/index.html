@@ -6,7 +6,7 @@
     <script src="https://kit.fontawesome.com/9743cd698f.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-
+    <link rel="stylesheet" href="style.css">
     <!-- Fontawesome is our recomended library for icons -->
 
   </head>
@@ -17,38 +17,29 @@
         <h1>Random Card Generator</h1>
         <!-- need to center the title - not working with MA or JCC -->
       </div>
-      <div class="whiteCard container-md w-25 h-50 bg-white mt-5 rounded">
+      <div class="whiteCard container-md bg-white mt-5 flex-column align-items-between">
         <div class="topRow row">
-          <div class="col-2">
-            <h1 class="suit">♦</h1>
+          <div class=" topSuit col-2">
+            <h2 class="suit ps-5 pt-5 ">♦</h2>
           </div>
-          <div class="col-2">
-            <h1 class="cardNum">2</h1>
+          <div class="topNum col-2">
+            <h2 class="ps-4 pt-5 cardNum">2</h2>
           </div>
           <div class="col-8"></div>
         </div>
-        <div class="middleRow row">
-          <!-- <div class="col-3"></div> -->
-          <div class="col-12 m-auto">
-            <!-- how do I center within the div col-6?? (m-auto and JCC dont work) -->
-            <img src ="../assets/BigLebowCard.jpg">
-          </div>
-          <!-- <div class="col-3"></div> -->
-        </div>
-        <div class="bottomRow row">
+        <div class="bottomRow row mt-auto">
           <div class="col-8"></div>
           <div class="bottomNum col-2">
-            <h1 class="cardNum">2</h1>
+            <h2 class="cardNum ps-4 pt-5 ">2</h2>
           </div>
-          <div class=" bottomSuit col-2">
-            <h1 class = "suit">♦</h1>
+          <div class="bottomSuit col-2">
+            <h2 class="suit ps-5 pt-5">♦</h2>
           </div>
         </div>
       </div>
       <div class="row mt-5 w-25 m-auto">
-        <button type="button" class=" refreshButton btn btn-danger">New Card!</button>
-      </div>
-      <div class="row fixed-bottom p-4 justify-content-center">
+        <button type="button" class="refreshButton btn btn-primary">New Card!</button>
+      <div class="row p-4 justify-content-center">
         Made with ❤️ by JBeanCode
       </div>
     </div>

@@ -6,9 +6,19 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function () {
   const cardNumbers = [
-    "A","2","3","4",
-    "5","6","7","8",
-    "9","10","J","Q","K",
+    "A",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K",
   ];
   const cardSuits = [
     { suit: "♦", color: "red" },
@@ -17,12 +27,12 @@ window.onload = function () {
     { suit: "♣", color: "black" },
   ];
   //set the text.color equal to the key ("color")
-
+  console.log("onload working");
   function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
   }
 
-  let createCardValues = () => {
+  const createCardValues = () => {
     const card = {}; //open object
     card.value = cardNumbers[getRandomIndex(cardNumbers)];
     let cardSuitSelect = cardSuits[getRandomIndex(cardSuits)];
@@ -30,19 +40,24 @@ window.onload = function () {
     card.suit = cardSuitSelect.suit;
     return card;
   };
-  const card = createCardValues(); //create a random card
 
-  const cardNumColor = document.getElementsByClassName("cardNum");
-  for (let numColorKey of cardNumColor){
-    numColorKey.style.color = card.color
-    numColorKey.innerHTML = `<h1>${card.value}</h1>`
-  }
+  const createNewCard = () => {
+    const card = createCardValues(); //create a random card
+    const cardNumColor = document.querySelectorAll(".cardNum");
+    const suitColor = document.querySelectorAll(".suit");
+    const newCardButton = document.querySelectorAll(".refreshButton");
 
-  const suitColor = document.getElementsByClassName("suit");
-  for (let suitColorKey of suitColor){
-    suitColorKey.style.color = card.color
-    suitColorKey.innerHTML = `<h1>${card.suit}</h1>`;
-  }
+    cardNumColor.forEach((element) => {
+      element.style.color = card.color;
+      element.textContent = card.value;
+    });
+    suitColor.forEach((element) => {
+      element.style.color = card.color;
+      element.textContent = card.suit;
+    });
+  };
+  const refreshButton = document.querySelector(".refreshButton");
+  refreshButton.addEventListener("click", createNewCard);
 
-  console.log(card);
+  createNewCard();
 };

@@ -20,16 +20,19 @@ body{
 }
 .bottomSuit{
     transform: rotate(180deg);
+    padding: 0
 }  
 .suit{
-    font-size: clamp(1rem, 2.5vw, 6rem)
+    font-size: clamp(1rem, 2.3vw, 6rem)
 }
 .cardNum{
-    font-size: clamp(1rem, 2.5vw, 6rem);
+    font-size: clamp(1rem, 2.3vw, 6rem);
     font-family: "Monaco", "Courier New", monospace;
 }
 .image{
     transform: scale(0.5);
 }
-
+.topSuit{
+    padding: 0
+}
 
